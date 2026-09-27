@@ -53,4 +53,4 @@ function updatePrice() {
 
 slider.addEventListener("input", updatePrice);
 
-toggle.addEventListener("click", updatePrice);
+toggle.addEventListener("change", updatePrice);
