@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pricing Component</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="component-body">
+            <header class="header">
+                <h1 class="header-title">Simple, traffic-based pricing</h1>
+                <p class="header-subtitle">Sign-up for our 30-day trial. No credit card required. </p>
+            </header>
+            <main class="card">
+                <div class="card-top">
+                    <p class="pageviews">100K pagewiews</p>
+                    <div class="card-top_block">
+                        <p class="block-top_price">$16.00</p>
+                        <p class="block-top_per-time">/month</p>
+                    </div>
+                </div>
+                <input 
+                    type="range"
+                    min="0"
+                    max="4"
+                    step="1"
+                    value="2"
+                    class="pricing-slider"
+                >
+                <div class="card-billing">
+                    <p class="month-billing_text billing_text">Monthly Billing</p>
+                    <label class="billing-toggle">
+                        <input
+                            class="billing-toggle_input"
+                            type="checkbox"
+                        >
+                        <span class="billing-toggle_slider"></span>
+                    </label>
+                    <p class="year-billing_text billing_text">Yearly Billing</p>
+                    <p class="discount-text">25% discount</p>
+                </div>
+                <div class="card-line"></div>
+                <div class="card-bottom">
+                    <ul class="bottom-card_list">
+                        <li class="bottom-card_item">
+                            <div class="card-item_img">
+                                <img src="./images/icon-check.svg" alt="">
+                            </div>
+                            <p class="bottom-card_text">Unlimited websites</p>
+                        </li>
+                        <li class="bottom-card_item">
+                            <div class="card-item_img">
+                                <img src="./images/icon-check.svg" alt="">
+                            </div>
+                            <p class="bottom-card_text">100% data ownership </p>
+                        </li>
+                        <li class="bottom-card_item">
+                            <div class="card-item_img">
+                                <img src="./images/icon-check.svg" alt="">
+                            </div>
+                            <p class="bottom-card_text">Email reports</p>
+                        </li>
+                    </ul>
+                    <button class="button">Start my trial</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
