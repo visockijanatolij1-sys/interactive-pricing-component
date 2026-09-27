@@ -16,3 +16,8 @@ ul, li{
 button{
     background-color: transparent;
 }
+
+.billing-toggle_input:focus-visible + .billing-toggle_slider {
+    outline: 2px solid #293356;
+    outline-offset: 3px;
+}
